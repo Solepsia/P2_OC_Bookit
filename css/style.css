@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Raleway;
+    src:    url(./Raleway/Raleway-VariableFont_wght.ttf),
+            url(./Raleway/Raleway-Italic-VariableFont_wght.ttf),
+            url(./Raleway/static/Raleway-Black.ttf),
+            url(./Raleway/static/Raleway-BlackItalic.ttf),
+            url(./Raleway/static/Raleway-Bold.ttf),
+            url(./Raleway/static/Raleway-BoldItalic.ttf),
+            url(./Raleway/static/Raleway-ExtraBold.ttf),
+            url(./Raleway/static/Raleway-ExtraBoldItalic.ttf),
+            url(./Raleway/static/Raleway-ExtraLight.ttf),
+            url(./Raleway/static/Raleway-ExtraLightItalic.ttf),
+            url(./Raleway/static/Raleway-Italic.ttf),
+            url(./Raleway/static/Raleway-Light.ttf),
+            url(./Raleway/static/Raleway-LightItalic.ttf),
+            url(./Raleway/static/Raleway-Medium.ttf),
+            url(./Raleway/static/Raleway-MediumItalic.ttf),
+            url(./Raleway/static/Raleway-Regular.ttf),
+            url(./Raleway/static/Raleway-SemiBold.ttf),
+            url(./Raleway/static/Raleway-SemiBoldItalic.ttf),
+            url(./Raleway/static/Raleway-Thin.ttf),
+            url(./Raleway/static/Raleway-ThinItalic.ttf);
+}
+
+* {
+    font-family: Raleway;
+    box-sizing: border-box;
+}
+
+.box {
+    box-sizing: border-box;
+}
