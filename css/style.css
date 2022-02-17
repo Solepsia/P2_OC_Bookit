@@ -1,32 +1,86 @@
-@font-face {
-    font-family: Raleway;
-    src:    url(./Raleway/Raleway-VariableFont_wght.ttf),
-            url(./Raleway/Raleway-Italic-VariableFont_wght.ttf),
-            url(./Raleway/static/Raleway-Black.ttf),
-            url(./Raleway/static/Raleway-BlackItalic.ttf),
-            url(./Raleway/static/Raleway-Bold.ttf),
-            url(./Raleway/static/Raleway-BoldItalic.ttf),
-            url(./Raleway/static/Raleway-ExtraBold.ttf),
-            url(./Raleway/static/Raleway-ExtraBoldItalic.ttf),
-            url(./Raleway/static/Raleway-ExtraLight.ttf),
-            url(./Raleway/static/Raleway-ExtraLightItalic.ttf),
-            url(./Raleway/static/Raleway-Italic.ttf),
-            url(./Raleway/static/Raleway-Light.ttf),
-            url(./Raleway/static/Raleway-LightItalic.ttf),
-            url(./Raleway/static/Raleway-Medium.ttf),
-            url(./Raleway/static/Raleway-MediumItalic.ttf),
-            url(./Raleway/static/Raleway-Regular.ttf),
-            url(./Raleway/static/Raleway-SemiBold.ttf),
-            url(./Raleway/static/Raleway-SemiBoldItalic.ttf),
-            url(./Raleway/static/Raleway-Thin.ttf),
-            url(./Raleway/static/Raleway-ThinItalic.ttf);
-}
-
 * {
-    font-family: Raleway;
     box-sizing: border-box;
+    font-family: Raleway;
 }
 
 .box {
     box-sizing: border-box;
+}
+
+div, h1, section, header, footer, nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    object-fit: cover;
+    display: block, flex;
+}
+
+h1 {
+    width: 100%;
+}
+
+@media screen and (min-width: 992px){
+
+    header {
+        justify-content: space-between;
+        padding: 0px 130px;
+        height: 235px;
+    }
+
+    header p {
+        align-self: center;
+    }
+
+    #hebergements {
+        width: 60%;
+        height: 77%;
+        background-color: #F2F2F2;
+        border-radius: 30px;
+    }
+
+    .hebergement {
+        border-radius: 30px;
+        background-color: white;
+        box-shadow: 5px 5px 5px #929292;
+        width: 30%;
+        height: 31%;
+        overflow: hidden;
+        padding: 5px;
+    }
+
+    .populaire {
+        border-radius: 30px;
+        background-color: white;
+        box-shadow: 5px 5px 5px #929292;
+        width: 80%;
+        height: 10%;
+        overflow: hidden;
+    }
+
+    .img_hebergement {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #populaires {
+        width: 30%;
+        height: 77%;
+        background-color: #F2F2F2;
+        border-radius: 30px;
+        align: left;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    
+}
+
+@media screen and (max-width: 768px) {
+
 }
