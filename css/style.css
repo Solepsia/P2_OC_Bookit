@@ -7,6 +7,22 @@
     box-sizing: border-box;
 }
 
+div {
+    border: solid black 1px;
+}
+
+h1 {
+    border: solid red 1px;
+}
+
+section, header, footer {
+    border: solid green 1px;
+}
+
+nav {
+    border: solid blue 1px;
+}
+
 h1, section, section *, header, footer, nav {
     display: flex;
     flex-wrap: wrap;
@@ -18,10 +34,6 @@ ul {
 
 .fas {
     display: inline-block;
-}
-
-h1 {
-    width: 100%;
 }
 
 header {
@@ -42,9 +54,19 @@ header p {
     margin: 20px;
 }
 
+.titre_section {
+    width: 100%;
+    font-size: 150%;
+    font-weight: bold;
+    margin: 15px;
+}
+
+#places {
+    padding: 30px;
+}
+
 #hebergements {
     width: 60%;
-    height: 77%;
     background-color: #F2F2F2;
     border-radius: 30px;
     padding: 15px;
@@ -55,10 +77,11 @@ header p {
     background-color: white;
     box-shadow: 5px 5px 5px #929292;
     width: 30.5%;
-    height: 350px;
+    height: 300px;
     overflow: hidden;
     padding: 5px;
     margin: 15px;
+    flex-direction: column;
 }
 
 .img_hebergement {
@@ -70,24 +93,38 @@ header p {
     width: 100%;
 }
 
-/*.titre_hebergement {
-    width: 100%;
-    height: 50px;
+.populaire .img_hebergement {
+    height: 
 }
 
-.prix_hebergement {
-    width: 100%;
-    height: 50px;
+.info_hebergement {
+    flex-direction: column;
+    margin: auto 10px;
 }
 
-.rank {
-    width: 100%;
-    height: 50px;
-}*/
+.titre_hebergement {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.titre_hebergement, .prix_hebergement, .rank {
+    margin: 2px;
+}
+
+.blue_star {
+    color: #0065FC;
+}
+
+.grey_star {
+    color: #c2c2c2;
+}
+
+strong {
+    font-weight: 600;
+}
 
 #populaires {
     width: 30%;
-    height: 77%;
     background-color: #F2F2F2;
     border-radius: 30px;
     align: left;
@@ -99,10 +136,11 @@ header p {
     background-color: white;
     box-shadow: 5px 5px 5px #929292;
     width: 95%;
-    height: 220px;
+    height: 150px;
     overflow: hidden;
     padding: 5px;
     margin: 15px;
+    flex-direction: row;
 }
 
 .img_populaire {
@@ -110,17 +148,41 @@ header p {
     align-items: center;
     object-fit: cover;
     border-radius: 28px 0px 0px 28px;
-    height: 210px;
+    height: 138px;
     width: 37%;
+}
+
+.populaire .info_hebergement {
+    max-width: 50%;
+}
+
+.activite_column {
+    width: 22%;
+    flex-direction: column;
+    margin: 15px;
 }
 
 .activite {
     border-radius: 30px;
     background-color: white;
     box-shadow: 5px 5px 5px #929292;
-    width: 22%;
+    width: 100%;
+    height: 270px;
     overflow: hidden;
     margin: 15px;
+}
+
+.titre_activite {
+    height: 40px;
+    padding-left: 20px;
+    align-items: center;
+    border: solid black;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.activite_column:nth-of-type(odd) .activite {
+    height: 570px;
 }
 
 .img_activite {
