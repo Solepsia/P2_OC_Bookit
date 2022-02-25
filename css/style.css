@@ -7,11 +7,11 @@
     box-sizing: border-box;
 }
 
-div {
+/*div {
     border: solid black 1px;
-}
+}*/
 
-h1 {
+/*h1 {
     border: solid red 1px;
 }
 
@@ -21,9 +21,9 @@ section, header, footer {
 
 nav {
     border: solid blue 1px;
-}
+}*/
 
-h1, section, section *, header, footer, nav {
+h1, section, section *, header, header *, footer, nav {
     display: flex;
     flex-wrap: wrap;
 }
@@ -32,18 +32,41 @@ ul {
     list-style-type: none;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .fas {
     display: inline-block;
 }
 
 header {
     justify-content: space-between;
-    padding: 0px 130px;
-    height: 235px;
+    padding: 0px 100px;
+    height: 200px;
+    width: 100%;
+    margin-top: -8px;
 }
 
-header p {
-    align-self: center;
+.logo {
+    margin: auto;
+}
+
+.puce_menu {
+    padding: 90px 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.puce_menu:hover {
+    border-top: solid #0065FC 3px;
+    color: #0065FC;
+    height: 197px;
+}
+
+#top {
+    padding: 0px 50px;
 }
 
 .elem_top {
@@ -58,11 +81,15 @@ header p {
     width: 100%;
     font-size: 150%;
     font-weight: bold;
-    margin: 15px;
+    margin: 30px 15px 15px 15px;
+    padding: 0px;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #places {
-    padding: 30px;
+    padding: 30px 0px;
+    justify-content: space-between;
 }
 
 #hebergements {
@@ -70,6 +97,7 @@ header p {
     background-color: #F2F2F2;
     border-radius: 30px;
     padding: 15px;
+    margin-left: 60px;
 }
 
 .hebergement {
@@ -77,7 +105,7 @@ header p {
     background-color: white;
     box-shadow: 5px 5px 5px #929292;
     width: 30.5%;
-    height: 300px;
+    height: 250px;
     overflow: hidden;
     padding: 5px;
     margin: 15px;
@@ -89,17 +117,13 @@ header p {
     align-items: center;
     object-fit: cover;
     border-radius: 28px 28px 0px 0px;
-    height: 200px;
+    height: 150px;
     width: 100%;
-}
-
-.populaire .img_hebergement {
-    height: 
 }
 
 .info_hebergement {
     flex-direction: column;
-    margin: auto 10px;
+    margin: auto 20px;
 }
 
 .titre_hebergement {
@@ -108,7 +132,7 @@ header p {
 }
 
 .titre_hebergement, .prix_hebergement, .rank {
-    margin: 2px;
+    margin: 4px;
 }
 
 .blue_star {
@@ -123,12 +147,19 @@ strong {
     font-weight: 600;
 }
 
+.afficher_plus {
+    margin: 15px;
+    font-size: 120%;
+    font-weight: bold;
+}
+
 #populaires {
     width: 30%;
     background-color: #F2F2F2;
     border-radius: 30px;
     align: left;
-    padding: 15px;    
+    padding: 15px;
+    margin-right: 60px;
 }
 
 .populaire {
@@ -136,7 +167,7 @@ strong {
     background-color: white;
     box-shadow: 5px 5px 5px #929292;
     width: 95%;
-    height: 150px;
+    height: 180px;
     overflow: hidden;
     padding: 5px;
     margin: 15px;
@@ -148,7 +179,7 @@ strong {
     align-items: center;
     object-fit: cover;
     border-radius: 28px 0px 0px 28px;
-    height: 138px;
+    height: 170px;
     width: 37%;
 }
 
@@ -156,10 +187,19 @@ strong {
     max-width: 50%;
 }
 
+.populaire .info_hebergement .rank {
+    margin-top: 60px;
+}
+
+#activites {
+    margin: 0px 60px;
+    justify-content: space-between;
+}
+
 .activite_column {
     width: 22%;
     flex-direction: column;
-    margin: 15px;
+    justify-content: space-between;
 }
 
 .activite {
@@ -169,20 +209,14 @@ strong {
     width: 100%;
     height: 270px;
     overflow: hidden;
-    margin: 15px;
 }
 
 .titre_activite {
     height: 40px;
     padding-left: 20px;
     align-items: center;
-    border: solid black;
     font-weight: bold;
     font-size: 120%;
-}
-
-.activite_column:nth-of-type(odd) .activite {
-    height: 570px;
 }
 
 .img_activite {
@@ -191,6 +225,43 @@ strong {
     object-fit: cover;
     height: 210px;
     width: 100%;
+}
+
+/*.activite_column:nth-of-type(2):nth-child(0) {
+    flex: 3;
+}
+
+.activite_column:nth-of-type(2):nth-child(1) {
+    flex: 2;
+}*/
+
+.activite_column:nth-of-type(even) .activite {
+    height: 570px;
+}
+
+.activite_column:nth-of-type(even) .img_activite {
+    height: 510px;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 60px;
+    background-color: #F2F2F2;
+    justify-content: space-between;
+}
+
+.bottom {
+    font-size: 120%;
+    width: 30%;
+}
+
+.bottom div {
+    margin: 10px 0px;
+}
+
+.bottom_title {
+    font-weight: bold;
+    padding-bottom: 12px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){

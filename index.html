@@ -18,8 +18,8 @@
         <header>
             <div><img src="./images/logo/Booki.png" class="logo" alt="booki_logo"></div>
             <nav>
-                <div class="puce_menu"><a href="#hebergements">Hébergements</a></div>
-                <div class="puce_menu"><a href="#activites">Activités</a></div>
+                <div class="puce_menu" onclick="location.href='#hebergements';" style="cursor: pointer;">Hébergements</div>
+                <div class="puce_menu" onclick="location.href='#activites';" style="cursor: pointer;">Activités</div>
             </nav>
         </header>
 
@@ -47,7 +47,7 @@
 
                 <div class="titre_section">Hébergements à Marseille</div>
 
-                <div class="hebergement">
+                <div class="hebergement" onclick="location.href='#';" style="cursor: pointer;">
                     <img src="./images/hebergements/auberge_cannebiere.jpg" class="img_hebergement" alt="auberge_la_cannebiere">
                     <div class="info_hebergement">
                         <div class="titre_hebergement">Auberge la Cannebière</div>
@@ -56,7 +56,7 @@
                     </div>
                 </div>
 
-                <div class="hebergement">
+                <div class="hebergement" onclick="location.href='#';" style="cursor: pointer;">
                     <img src="./images/hebergements/hotel_port.jpg" class="img_hebergement" alt="hotel_du_port">
                     <div class="info_hebergement">
                         <div class="titre_hebergement">Hôtel du Port</div>
@@ -65,7 +65,7 @@
                     </div>
                 </div>
 
-                <div class="hebergement">
+                <div class="hebergement" onclick="location.href='#';" style="cursor: pointer;">
                     <img src="./images/hebergements/hotel_mouettes.jpg" class="img_hebergement" alt="hotel_les_mouettes">
                     <div class="info_hebergement">
                         <div class="titre_hebergement">Hôtel Les mouettes</div>
@@ -74,7 +74,7 @@
                     </div>
                 </div>
 
-                <div class="hebergement">
+                <div class="hebergement" onclick="location.href='#';" style="cursor: pointer;">
                     <img src="./images/hebergements/hotel_de_la_mer.jpg" class="img_hebergement" alt="hotel_de_la_mer">
                     <div class="info_hebergement">
                         <div class="titre_hebergement">Hôtel de la mer</div>
@@ -83,7 +83,7 @@
                     </div>
                 </div>
 
-                <div class="hebergement">
+                <div class="hebergement" onclick="location.href='#';" style="cursor: pointer;">
                     <img src="./images/hebergements/auberge_panier.jpg" class="img_hebergement" alt="auberge_le_panier">
                     <div class="info_hebergement">
                         <div class="titre_hebergement">Auberge le Panier</div>
@@ -92,7 +92,7 @@
                     </div>
                 </div>
 
-                <div class="hebergement">
+                <div class="hebergement" onclick="location.href='#';" style="cursor: pointer;">
                     <img src="./images/hebergements/hotel_chez_amina.jpg" class="img_hebergement" alt="hotel_chez_amina">
                     <div class="info_hebergement">
                         <div class="titre_hebergement">Hôtel chez Amina</div>
@@ -101,15 +101,18 @@
                     </div>
                 </div>
 
-                <div><a href="#">Afficher plus</a></div>
+                <div class="afficher_plus"><a href="#">Afficher plus</a></div>
 
             </div>
 
             <div id="populaires">
 
-                <div class="titre_section">Les plus populaires<i class="fas fa-chart-line"></i></div>
+                <div class="titre_section">
+                    <div>Les plus populaires</div>
+                    <div><i class="fas fa-chart-line"></i></div>
+                </div>
 
-                <div class="populaire">
+                <div class="populaire" onclick="location.href='#';" style="cursor: pointer;">
                     <img src="./images/hebergements/hotel_soleil_matin.jpg" class="img_populaire" alt="hotel_le_soleil_du_matin">
                     <div class="info_hebergement">
                         <div class="titre_hebergement">Hôtel Le soleil du matin</div>
@@ -118,7 +121,7 @@
                     </div>
                 </div>
 
-                <div class="populaire">
+                <div class="populaire" onclick="location.href='#';" style="cursor: pointer;">
                     <img src="./images/hebergements/coeur_eau_chambres_hotes.jpg" class="img_populaire" alt="au_coeur_de_l_eau_chambre_d_hotes">
                     <div class="info_hebergement">
                         <div class="titre_hebergement">Au coeur de l'eau Chambre d'hôtes</div>
@@ -127,7 +130,7 @@
                     </div>
                 </div>
 
-                <div class="populaire">
+                <div class="populaire" onclick="location.href='#';" style="cursor: pointer;">
                     <img src="./images/hebergements/hotel_tout_bleu_blanc.jpg" class="img_populaire" alt="hotel_tout_bleu_et_blanc">
                     <div class="info_hebergement">
                         <div class="titre_hebergement">Hôtel Tout bleu et Blanc</div>
@@ -147,33 +150,33 @@
             <!--créer une sous-div pour chaque colonne qui contient plus d'une carte-->
 
             <div class="activite_column">
-                <div class="activite">
+                <div class="activite" onclick="location.href='#';" style="cursor: pointer;">
                     <img src="./images/activites/vieux_port.jpg" class="img_activite" alt="vieux_port">
                     <div class="titre_activite">Vieux Port</div>
                 </div>
             </div>
             <div class="activite_column">
-                <div class="activite">
+                <div class="activite" onclick="location.href='#';" style="cursor: pointer;">
                     <img src="./images/activites/fort_pomegues.jpg" class="img_activite" alt="fort_de_pomegues">
                     <div class="titre_activite">Fort de Pomègues</div>
                 </div>
-                <div class="activite">
+                <div class="activite" onclick="location.href='#';" style="cursor: pointer;">
                     <img src="./images/activites/iles_frioul.jpg" class="img_activite" alt="iles_du_frioul">
                     <div class="titre_activite">Îles du Frioul</div>
                 </div>
             </div>
             <div class="activite_column">
-                <div class="activite">
+                <div class="activite" onclick="location.href='#';" style="cursor: pointer;">
                     <img src="./images/activites/parc_national_calanques.jpg" class="img_activite" alt="parc_national_des_calanques">
                     <div class="titre_activite">Parc National des Calanques</div>
                 </div>
             </div>
             <div class="activite_column">
-                <div class="activite">
+                <div class="activite" onclick="location.href='#';" style="cursor: pointer;">
                     <img src="./images/activites/nddlg.jpg" class="img_activite" alt="notre-dame-de-la-garde">
                     <div class="titre_activite">Notre-Dame-de-la-Garde</div>
                 </div>
-                <div class="activite">
+                <div class="activite" onclick="location.href='#';" style="cursor: pointer;">
                     <img src="./images/activites/parc_longchamp.jpg" class="img_activite" alt="parc_longchamp">
                     <div class="titre_activite">Parc Longchamp</div>
                 </div>
@@ -183,29 +186,29 @@
 
         <footer>
 
-            <div>
-                <p class="footer_list_title">A propos</p>
-                <ul>
-                    <li>Fonctionnement du site</li>
-                    <li>Conditions générales de vente</li>
-                    <li>Données et confidentialité</li>
-                </ul>
+            <div class="bottom">
+                <div class="bottom_title">A propos</div>
+                <div class="bottom_list">
+                    <div><a href="#">Fonctionnement du site</a></div>
+                    <div><a href="#">Conditions générales de vente</a></div>
+                    <div><a href="#">Données et confidentialité</a></div>
+                </div>
             </div>
 
-            <div>
-                <p class="footer_list_title">Nos hébergements</p>
-                <ul>
-                    <li>Charte qualité</li>
-                    <li>Soumettre votre hôtel</li>
-                </ul>
+            <div class="bottom">
+                <div class="bottom_title">Nos hébergements</div>
+                <div class="bottom_list">
+                    <div><a href="#">Charte qualité</a></div>
+                    <div><a href="#">Soumettre votre hôtel</a></div>
+                </div>
             </div>
 
-            <div>
-                <p class="footer_list_title">Assistance</p>
-                <ul>
-                    <li>Centre d'aide</li>
-                    <li>Nous contacter</li>
-                </ul>
+            <div class="bottom">
+                <div class="bottom_title">Assistance</div>
+                <div class="bottom_list">
+                    <div><a href="#">Centre d'aide</a></div>
+                    <div><a href="#">Nous contacter</a></div>
+                </div>
             </div>
         </footer>
 
