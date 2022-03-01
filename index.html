@@ -24,21 +24,38 @@
         </header>
 
         <section id="top">
-            <h1 class="elem_top">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <div class="elem_top"id="title_top">Trouvez votre hébergement pour des vacances de rêve</div>
             <div class="elem_top">En plein centre ville ou en pleine nature</div>
-            <div class="elem_top" id="cont_search">
-                <div class="elem_search"><i class="fas fa-location-dot"></i></div>
-                <div class="elem_search"></div>
-                <div class="elem_search"></div>
+            <div class="elem_top" id="search">
+                <div class="search_icon"><i class="fas fa-location-arrow"></i></div>
+                <form method="post" action="#">
+                    <div><input type="text" name="city" id="city" placeholder="Marseille, France" /></div>
+                    <div class="button"><button type="submit">Rechercher</button></div>
+                </form>
             </div>
-            <div class="elem_top" id="cont_filter">
-                <div class="elem_filter">Filtres</div>
-                <div class="elem_filter"><i class="fas fa-money-bill-wave"></i>Économique</div>
-                <div class="elem_filter"><i class="fas fa-child"></i>Familial</div>
-                <div class="elem_filter"><i class="fas fa-heart"></i>Romantique</div>
-                <div class="elem_filter"><i class="fas fa-dog"></i>Animaux autorisés</div>
+            <div class="elem_top" id="filters">
+                <div>Filtres</div>
+                <div class="filter">
+                    <div class="filter_icon"><i class="fas fa-money-bill-wave"></i></div>
+                    <div>Économique</div>
+                </div>
+                <div class="filter">
+                    <div class="filter_icon"><i class="fas fa-child"></i></div>
+                    <div>Familial</div>
+                </div>
+                <div class="filter">
+                    <div class="filter_icon"><i class="fas fa-heart"></i></div>
+                    <div>Romantique</div>
+                </div>
+                <div class="filter">
+                    <div class="filter_icon"><i class="fas fa-dog"></i></div>
+                    <div>Animaux autorisés</div>
+                </div>
             </div>
-            <div class="elem_top" id="info"><i class="fa fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</div>
+            <div class="elem_top" id="info">
+                <div class="info_icon"><i class="fa fa-info"></i></div>
+                <div class="info_text">Plus de 500 logements sont disponibles dans cette ville</div>
+            </div>
         </section>
 
         <section id="places">
