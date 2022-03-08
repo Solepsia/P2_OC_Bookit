@@ -16,21 +16,22 @@
     <body>
 
         <header>
-            <div><img src="./images/logo/Booki.png" class="logo" alt="booki_logo"></div>
+            <div class="logo"><img src="./images/logo/Booki.png" alt="booki_logo"></div>
             <nav>
-                <div class="puce_menu" onclick="location.href='#hebergements';" style="cursor: pointer;">Hébergements</div>
-                <div class="puce_menu" onclick="location.href='#activites';" style="cursor: pointer;">Activités</div>
+                <a href="#hebergements"><div class="puce_menu">Hébergements</div></a>
+                <a href="#activites"><div class="puce_menu">Activités</div></a>
             </nav>
         </header>
 
         <section id="top">
-            <div class="elem_top"id="title_top">Trouvez votre hébergement pour des vacances de rêve</div>
+            <div class="elem_top" id="title_top">Trouvez votre hébergement pour des vacances de rêve</div>
             <div class="elem_top">En plein centre ville ou en pleine nature</div>
             <div class="elem_top" id="search">
-                <div class="search_icon"><i class="fas fa-location-arrow"></i></div>
+                <div class="search_icon"><i class="fas fa-map-marker"></i></div>
                 <form method="post" action="#">
-                    <div><input type="text" name="city" id="city" placeholder="Marseille, France" /></div>
-                    <div class="button"><button type="submit">Rechercher</button></div>
+                    <div class="search_input"><input type="text" name="city" id="city" placeholder="Marseille, France"></div>
+                    <div class="button" id="rechercher"><button type="submit">Rechercher</button></div>
+                    <div class="button" id="loupe"><button type="submit"><i class="fas fa-search"></i></button></div>
                 </form>
             </div>
             <div class="elem_top" id="filters">
@@ -64,59 +65,59 @@
 
                 <div class="titre_section">Hébergements à Marseille</div>
 
-                <div class="hebergement" onclick="location.href='#';" style="cursor: pointer;">
+                <a href="#" class="hebergement"><div>
                     <img src="./images/hebergements/auberge_cannebiere.jpg" class="img_hebergement" alt="auberge_la_cannebiere">
                     <div class="info_hebergement">
                         <div class="titre_hebergement">Auberge la Cannebière</div>
                         <div class="prix_hebergement">Nuit à partir de<strong>&nbsp;25€</strong></div>
                         <div class="rank"><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star grey_star"></i></div>
                     </div>
-                </div>
+                </div></a>
 
-                <div class="hebergement" onclick="location.href='#';" style="cursor: pointer;">
+                <a href="#" class="hebergement"><div>
                     <img src="./images/hebergements/hotel_port.jpg" class="img_hebergement" alt="hotel_du_port">
                     <div class="info_hebergement">
                         <div class="titre_hebergement">Hôtel du Port</div>
                         <div class="prix_hebergement">Nuit à partir de 52<strong>€</strong></div>
                         <div class="rank"><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i></div>
                     </div>
-                </div>
+                </div></a>
 
-                <div class="hebergement" onclick="location.href='#';" style="cursor: pointer;">
+                <a href="#" class="hebergement"><div>
                     <img src="./images/hebergements/hotel_mouettes.jpg" class="img_hebergement" alt="hotel_les_mouettes">
                     <div class="info_hebergement">
                         <div class="titre_hebergement">Hôtel Les mouettes</div>
                         <div class="prix_hebergement">Nuit à partir de 76<strong>€</strong></div>
                         <div class="rank"><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star grey_star"></i></div>
                     </div>
-                </div>
+                </div></a>
 
-                <div class="hebergement" onclick="location.href='#';" style="cursor: pointer;">
+                <a href="#" class="hebergement"><div>
                     <img src="./images/hebergements/hotel_de_la_mer.jpg" class="img_hebergement" alt="hotel_de_la_mer">
                     <div class="info_hebergement">
                         <div class="titre_hebergement">Hôtel de la mer</div>
                         <div class="prix_hebergement">Nuit à partir de 46<strong>€</strong></div>
                         <div class="rank"><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star grey_star"></i><i class="fas fa-star grey_star"></i></div>
                     </div>
-                </div>
+                </div></a>
 
-                <div class="hebergement" onclick="location.href='#';" style="cursor: pointer;">
+                <a href="#" class="hebergement"><div>
                     <img src="./images/hebergements/auberge_panier.jpg" class="img_hebergement" alt="auberge_le_panier">
                     <div class="info_hebergement">
                         <div class="titre_hebergement">Auberge le Panier</div>
                         <div class="prix_hebergement">Nuit à partir de<strong>&nbsp;23€</strong></div>
                         <div class="rank"><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star grey_star"></i></div>
                     </div>
-                </div>
+                </div></a>
 
-                <div class="hebergement" onclick="location.href='#';" style="cursor: pointer;">
+                <a href="#" class="hebergement"><div>
                     <img src="./images/hebergements/hotel_chez_amina.jpg" class="img_hebergement" alt="hotel_chez_amina">
                     <div class="info_hebergement">
                         <div class="titre_hebergement">Hôtel chez Amina</div>
                         <div class="prix_hebergement">Nuit à partir de 96<strong>€</strong></div>
                         <div class="rank"><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i></div>
                     </div>
-                </div>
+                </div></a>
 
                 <div class="afficher_plus"><a href="#">Afficher plus</a></div>
 
@@ -129,32 +130,32 @@
                     <div><i class="fas fa-chart-line"></i></div>
                 </div>
 
-                <div class="populaire" onclick="location.href='#';" style="cursor: pointer;">
+                <a href="#" class="populaire"><div>
                     <img src="./images/hebergements/hotel_soleil_matin.jpg" class="img_populaire" alt="hotel_le_soleil_du_matin">
                     <div class="info_hebergement">
                         <div class="titre_hebergement">Hôtel Le soleil du matin</div>
                         <div class="prix_hebergement">Nuit à partir de 128<strong>€</strong></div>
                         <div class="rank"><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i></div>
                     </div>
-                </div>
+                </div></a>
 
-                <div class="populaire" onclick="location.href='#';" style="cursor: pointer;">
+                <a href="#" class="populaire"><div>
                     <img src="./images/hebergements/coeur_eau_chambres_hotes.jpg" class="img_populaire" alt="au_coeur_de_l_eau_chambre_d_hotes">
                     <div class="info_hebergement">
                         <div class="titre_hebergement">Au coeur de l'eau Chambre d'hôtes</div>
                         <div class="prix_hebergement">Nuit à partir de 71<strong>€</strong></div>
                         <div class="rank"><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star grey_star"></i></div>
                     </div>
-                </div>
+                </div></a>
 
-                <div class="populaire" onclick="location.href='#';" style="cursor: pointer;">
+                <a href="#" class="populaire"><div>
                     <img src="./images/hebergements/hotel_tout_bleu_blanc.jpg" class="img_populaire" alt="hotel_tout_bleu_et_blanc">
                     <div class="info_hebergement">
                         <div class="titre_hebergement">Hôtel Tout bleu et Blanc</div>
                         <div class="prix_hebergement">Nuit à partir de 68<strong>€</strong></div>
                         <div class="rank"><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star blue_star"></i><i class="fas fa-star grey_star"></i></div>
                     </div>
-                </div>
+                </div></a>
 
             </div>
 
@@ -167,36 +168,36 @@
             <!--créer une sous-div pour chaque colonne qui contient plus d'une carte-->
 
             <div class="activite_column">
-                <div class="activite" onclick="location.href='#';" style="cursor: pointer;">
+                <a href="#"><div class="activite">
                     <img src="./images/activites/vieux_port.jpg" class="img_activite" alt="vieux_port">
                     <div class="titre_activite">Vieux Port</div>
-                </div>
+                </div></a>
             </div>
             <div class="activite_column">
-                <div class="activite" onclick="location.href='#';" style="cursor: pointer;">
+                <a href="#"><div class="activite" id="pomegues">
                     <img src="./images/activites/fort_pomegues.jpg" class="img_activite" alt="fort_de_pomegues">
                     <div class="titre_activite">Fort de Pomègues</div>
-                </div>
-                <div class="activite" onclick="location.href='#';" style="cursor: pointer;">
+                </div></a>
+                <a href="#"><div class="activite" id="frioul">
                     <img src="./images/activites/iles_frioul.jpg" class="img_activite" alt="iles_du_frioul">
                     <div class="titre_activite">Îles du Frioul</div>
-                </div>
+                </div></a>
             </div>
             <div class="activite_column">
-                <div class="activite" onclick="location.href='#';" style="cursor: pointer;">
+                <a href="#"><div class="activite">
                     <img src="./images/activites/parc_national_calanques.jpg" class="img_activite" alt="parc_national_des_calanques">
                     <div class="titre_activite">Parc National des Calanques</div>
-                </div>
+                </div></a>
             </div>
             <div class="activite_column">
-                <div class="activite" onclick="location.href='#';" style="cursor: pointer;">
+                <a href="#"><div class="activite" id="nddlg">
                     <img src="./images/activites/nddlg.jpg" class="img_activite" alt="notre-dame-de-la-garde">
                     <div class="titre_activite">Notre-Dame-de-la-Garde</div>
-                </div>
-                <div class="activite" onclick="location.href='#';" style="cursor: pointer;">
+                </div></a>
+                <a href="#"><div class="activite" id="longchamp">
                     <img src="./images/activites/parc_longchamp.jpg" class="img_activite" alt="parc_longchamp">
                     <div class="titre_activite">Parc Longchamp</div>
-                </div>
+                </div></a>
             </div>
 
         </section>

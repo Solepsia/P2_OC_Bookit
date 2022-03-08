@@ -7,22 +7,6 @@
     box-sizing: border-box;
 }
 
-/*div {
-    border: solid black 1px;
-}*/
-
-/*h1 {
-    border: solid red 1px;
-}
-
-section, header, footer {
-    border: solid green 1px;
-}
-
-nav {
-    border: solid blue 1px;
-}*/
-
 h1, section, section *, header, header *, footer, nav {
     display: flex;
     flex-wrap: wrap;
@@ -35,6 +19,7 @@ ul {
 a {
     color: inherit;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .fas {
@@ -45,11 +30,10 @@ header {
     justify-content: space-between;
     padding: 0px 100px;
     height: 200px;
-    width: 100%;
     margin-top: -8px;
 }
 
-.logo {
+.logo img {
     margin: auto;
 }
 
@@ -81,7 +65,7 @@ header {
     height: 50px;
     font-size: 120%;
     font-weight: bold;
-    width: 30%;
+    width: 33%;
     margin: 15px 0px 0px 20px;
     border: #F2F2F2 solid 1px;
     border-radius: 15px;
@@ -95,26 +79,52 @@ header {
     margin: -1px 0px -1px -1px;
 }
 
+form {
+    width: calc(100% - 50px);
+}
+
+.search_input {
+    flex-grow: 2;
+    border-top: solid #f2f2f2 1px;
+    border-bottom: solid #f2f2f2 1px;
+    margin: -1px 0px;
+}
+
 #city {
     height: 50px;
     flex: 1;
     align-items: center;
     padding-left: 20px;
-    margin: -1px 0px;
+    border: none;
+    font-size: 110%;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
 }
 
 button {
+    cursor: pointer;
     height: 50px;
     border-radius: 0px 15px 15px 0px;
     padding: 0px 12px;
-    margin: -1px -1px -1px 0px;
+    margin: 0px -1px 0px 0px;
     justify-content: center;
     align-items: center;
     background-color: #0065FC;
     color: white;
+    border:none;
+    font-size: 110%;
+    font-weight: bold;
 }
 
-.fa-location-arrow {
+#rechercher {
+    display: block;
+}
+
+#loupe {
+    display: none;
+}
+
+.fa-map-marker {
     display: block;
     margin: auto;
 }
@@ -130,11 +140,17 @@ button {
 }
 
 .filter {
+    cursor: pointer;
     border: solid #c2c2c2 2px;
     height: 46px;
     border-radius: 23px;
     align-items: center;
     padding-right: 15px;
+}
+
+.filter:hover {
+    border-color: #DEEBFF;
+    background-color: #DEEBFF;
 }
 
 .filter_icon {
@@ -195,10 +211,11 @@ button {
 }
 
 .hebergement {
+    display: block;
     border-radius: 30px;
     background-color: white;
     box-shadow: 5px 5px 5px #c2c2c2;
-    width: 30.5%;
+    width: 30%;
     height: 250px;
     overflow: hidden;
     padding: 5px;
@@ -257,6 +274,7 @@ strong {
 }
 
 .populaire {
+    display: block;
     border-radius: 30px;
     background-color: white;
     box-shadow: 5px 5px 5px #c2c2c2;
@@ -321,13 +339,7 @@ strong {
     width: 100%;
 }
 
-/*.activite_column:nth-of-type(2):nth-child(0) {
-    flex: 3;
-}
 
-.activite_column:nth-of-type(2):nth-child(1) {
-    flex: 2;
-}*/
 
 .activite_column:nth-of-type(even) .activite {
     height: 570px;
@@ -335,6 +347,38 @@ strong {
 
 .activite_column:nth-of-type(even) .img_activite {
     height: 510px;
+}
+
+#pomegues {
+    height: 320px;
+}
+
+#pomegues .img_activite {
+    height: 260px;
+}
+
+#frioul {
+    height: 210px;
+}
+
+#frioul .img_activite {
+    height: 150px;
+}
+
+#nddlg {
+    height: 250px;
+}
+
+#nddlg .img_activite {
+    height: 190px;
+}
+
+#longchamp {
+    height: 280px;
+}
+
+#longchamp .img_activite {
+    height: 220px;
 }
 
 footer {
@@ -358,8 +402,71 @@ footer {
     padding-bottom: 12px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px){
-    
+@media screen and (max-width: 992px) {
+
+    header {
+        margin: 0px 0px 0px -10px;
+        padding: 10px 0px 0px 0px;
+        flex-direction: row;
+        width: calc(100% + 20px);
+        height: 150px;
+    }
+
+    .logo {
+        margin: auto;
+    }
+
+    .logo img {
+        width: 114px;
+        height: 54px;
+        margin: auto;
+    }
+
+    nav {
+        margin: 0px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+        border-bottom: #F2F2F2 solid 3px;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .puce_menu {
+        padding: 0px 0px 10px 0px;
+        text-align: center;
+        justify-content: center;
+        font-size: 110%;
+    }
+
+    #top {
+        margin: 0px 10px;
+        height: 500px;
+    }
+
+    #rechercher {
+        display: none;
+    }
+
+    #loupe {
+        display: block;
+    }
+
+    #search {
+        width: 100px;
+        margin: 0px;
+    }
+
+    form {
+        width: calc(100% - 50px);
+    }
 }
 
 @media screen and (max-width: 768px) {
