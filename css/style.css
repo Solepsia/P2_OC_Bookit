@@ -12,6 +12,10 @@ h1, section, section *, header, header *, footer, nav {
     flex-wrap: wrap;
 }
 
+body {
+    margin: 0px;
+}
+
 ul {
     list-style-type: none;
 }
