@@ -32,9 +32,8 @@ a {
 
 header {
     justify-content: space-between;
-    padding: 0px 100px;
+    padding: 0px 50px;
     height: 200px;
-    margin-top: -8px;
 }
 
 .logo img {
@@ -54,7 +53,7 @@ header {
 }
 
 #top {
-    margin: 0px 60px;
+    margin: 0px 30px;
     flex-direction: column;
     height: 250px;
     justify-content: space-between;
@@ -69,7 +68,8 @@ header {
     height: 50px;
     font-size: 120%;
     font-weight: bold;
-    width: 33%;
+    min-width: 33%;
+    max-width: 60%;
     margin: 15px 0px 0px 20px;
     border: #F2F2F2 solid 1px;
     border-radius: 15px;
@@ -135,13 +135,12 @@ button {
 }
 
 #filters {
-    height: 50px;
+    min-height: 50px;
     font-size: 120%;
     font-weight: bold;
     padding-left: 20px;
     justify-content: space-between;
     align-items: center;
-    width: 66%;
 }
 
 .filter {
@@ -193,8 +192,8 @@ button {
 }
 
 .titre_section {
+    font-size: 130%;
     width: 100%;
-    font-size: 150%;
     font-weight: bold;
     margin: 30px 15px 15px 15px;
     padding: 0px;
@@ -208,23 +207,24 @@ button {
 }
 
 #hebergements {
-    width: 60%;
+    width: 62%;
     background-color: #F2F2F2;
-    border-radius: 30px;
-    padding: 15px;
-    margin-left: 60px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 30px;
+    justify-content: space-between;
 }
 
 .hebergement {
     display: block;
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: white;
     box-shadow: 5px 5px 5px #c2c2c2;
     width: 30%;
-    height: 250px;
+    height: 200px;
     overflow: hidden;
     padding: 5px;
-    margin: 15px;
+    margin: 9px;
     flex-direction: column;
 }
 
@@ -232,19 +232,20 @@ button {
     justify-content: center;
     align-items: center;
     object-fit: cover;
-    border-radius: 28px 28px 0px 0px;
-    height: 150px;
+    border-radius: 18px 18px 0px 0px;
+    height: 100px;
     width: 100%;
 }
 
 .info_hebergement {
     flex-direction: column;
-    margin: auto 20px;
+    margin: auto 5px;
+    font-size: 90%;
 }
 
 .titre_hebergement {
     font-weight: bold;
-    font-size: 120%;
+    font-size: 100%;
 }
 
 .titre_hebergement, .prix_hebergement, .rank {
@@ -270,24 +271,24 @@ strong {
 }
 
 #populaires {
-    width: 30%;
+    width: 31%;
     background-color: #F2F2F2;
-    border-radius: 30px;
+    border-radius: 20px;
     align: left;
-    padding: 15px;
-    margin-right: 60px;
+    padding: 10px;
+    margin-right: 30px;
 }
 
 .populaire {
     display: block;
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: white;
     box-shadow: 5px 5px 5px #c2c2c2;
     width: 95%;
-    height: 180px;
+    height: 140px;
     overflow: hidden;
     padding: 5px;
-    margin: 15px;
+    margin: 10px;
     flex-direction: row;
 }
 
@@ -295,33 +296,33 @@ strong {
     justify-content: flex-start;
     align-items: center;
     object-fit: cover;
-    border-radius: 28px 0px 0px 28px;
-    height: 170px;
-    width: 37%;
+    border-radius: 18px 0px 0px 18px;
+    height: 130px;
+    width: 36%;
 }
 
 .populaire .info_hebergement {
-    max-width: 50%;
+    max-width: 56%;
     flex-direction: column;
 }
 
 .populaire .info_hebergement .rank {
-    justify-self: flex-end;
+    margin-top: 25px;
 }
 
 #activites {
-    margin: 0px 60px;
+    margin: 0px 30px;
     justify-content: space-between;
 }
 
 .activite_column {
-    width: 22%;
+    width: 23%;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .activite {
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: white;
     box-shadow: 5px 5px 5px #c2c2c2;
     width: 100%;
@@ -334,7 +335,7 @@ strong {
     padding-left: 20px;
     align-items: center;
     font-weight: bold;
-    font-size: 120%;
+    font-size: 100%;
 }
 
 .img_activite {
@@ -450,9 +451,15 @@ footer {
         font-size: 110%;
     }
 
+    .puce_menu:target {
+        color:#0065FC;
+        border-color: #0065FC;
+    }
+
     #top {
         margin: 0px 10px;
-        height: 500px;
+        min-height: 400px;
+        max-height: 500px;
         padding-top: 0px;
         justify-content: space-around;
     }
@@ -468,6 +475,7 @@ footer {
     #search {
         width: calc(100% - 20px);
         margin: 0px;
+        max-width: 100%;
         flex-wrap: nowrap;
     }
 
@@ -484,7 +492,7 @@ footer {
     }
 
     #filters {
-        height: 200px;
+        max-height: 200px;
         width: 100%;
         padding-left: 0px;
     }
@@ -504,6 +512,10 @@ footer {
         padding: 0px;
     }
 
+    .titre_section {
+        width: inherit;
+    }
+
     #hebergements {
         order: 2;
         width: 100%;
@@ -515,6 +527,7 @@ footer {
 
     .titre_section {
         margin: 30px 15px;
+        font-size: 150%;
     }
     
     .hebergement {
@@ -522,6 +535,14 @@ footer {
         margin: 5px 10px;
         border-radius: 20px;
         height: 220px;
+    }
+
+    .info_hebergement {
+        font-size: 100%;
+    }
+
+    .titre_hebergement {
+        font-size: 120%;
     }
 
     .img_hebergement {
@@ -569,6 +590,10 @@ footer {
         border-radius: 20px;
         height: 200px;
         margin: 8px 10px;
+    }
+
+    .titre_activite {
+        font-size: 120%;
     }
 
     .img_activite {
