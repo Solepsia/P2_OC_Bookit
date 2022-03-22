@@ -91,12 +91,11 @@ form {
     flex-grow: 2;
     border-top: solid #f2f2f2 1px;
     border-bottom: solid #f2f2f2 1px;
-    margin: -1px 0px;
+    margin: 0px;
     min-width: 0px;
 }
 
 #city {
-    height: 50px;
     flex: 1;
     align-items: center;
     padding-left: 20px;
@@ -108,10 +107,10 @@ form {
 
 button {
     cursor: pointer;
-    height: 50px;
+    height: 100%;
     border-radius: 0px 15px 15px 0px;
     padding: 0px 12px;
-    margin: 0px -1px 0px 0px;
+    margin: 0px;
     justify-content: center;
     align-items: center;
     background-color: #0065FC;
@@ -150,6 +149,7 @@ button {
     border-radius: 23px;
     align-items: center;
     padding-right: 15px;
+    margin: 2px 0px;
 }
 
 .filter:hover {
@@ -274,7 +274,6 @@ strong {
     width: 31%;
     background-color: #F2F2F2;
     border-radius: 20px;
-    align: left;
     padding: 10px;
     margin-right: 30px;
 }
@@ -332,7 +331,7 @@ strong {
 
 .titre_activite {
     height: 40px;
-    padding-left: 20px;
+    padding: 0px 20px 0px 20px;
     align-items: center;
     font-weight: bold;
     font-size: 100%;
@@ -437,7 +436,6 @@ footer {
 
     nav a {
         display: block;
-        border-bottom: #F2F2F2 solid 3px;
         width: 50%;
         justify-content: center;
         align-items: center;
@@ -446,12 +444,13 @@ footer {
 
     .puce_menu {
         padding: 0px 0px 10px 0px;
+        border-bottom: #F2F2F2 solid 3px;
         text-align: center;
         justify-content: center;
         font-size: 110%;
     }
 
-    .puce_menu:target {
+    .puce_menu--blue {
         color:#0065FC;
         border-color: #0065FC;
     }
