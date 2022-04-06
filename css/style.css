@@ -128,7 +128,7 @@ button {
     display: none;
 }
 
-.fa-map-marker {
+.fa-map-marker-alt {
     display: block;
     margin: auto;
 }
@@ -511,10 +511,6 @@ footer {
         padding: 0px;
     }
 
-    .titre_section {
-        width: inherit;
-    }
-
     #hebergements {
         order: 2;
         width: 100%;
@@ -533,11 +529,15 @@ footer {
         width: calc(100% - 20px);
         margin: 5px 10px;
         border-radius: 20px;
-        height: 220px;
+        height: 240px;
     }
 
     .info_hebergement {
         font-size: 100%;
+    }
+
+    .hebergement .info_hebergement {
+        margin-left: 10px;
     }
 
     .titre_hebergement {
@@ -546,7 +546,7 @@ footer {
 
     .img_hebergement {
         border-radius: 18px 18px 0px 0px;
-        height: 120px;
+        height: 140px;
     }
 
     #populaires {
@@ -559,24 +559,24 @@ footer {
     }
 
     .populaire {
-        height: 140px;
+        height: 160px;
         margin: 5px 10px;
         border-radius: 20px;
         width: calc(100% - 20px);
     }
 
     .img_populaire {
-        height: 130px;
+        height: 150px;
         border-radius: 18px 0px 0px 18px;
     }
 
     .populaire .info_hebergement {
         max-width: 50%;
+        margin-left: 20px;
     }
 
     #activites {
         margin: 0px;
-        flex-direction: column;
     }
     
     .activite_column {
@@ -587,7 +587,7 @@ footer {
     
     .activite {
         border-radius: 20px;
-        height: 200px;
+        height: 220px;
         margin: 8px 10px;
     }
 
@@ -596,47 +596,47 @@ footer {
     }
 
     .img_activite {
-        height: 140px;
+        height: 160px;
     }
 
     .activite_column:nth-of-type(even) .activite {
-        height: 200px;
+        height: 220px;
     }
     
     .activite_column:nth-of-type(even) .img_activite {
-        height: 140px;
+        height: 160px;
     }
 
     #pomegues {
-        height: 200px;
+        height: 220px;
     }
     
     #pomegues .img_activite {
-        height: 140px;
+        height: 160px;
     }
     
     #frioul {
-        height: 200px;
+        height: 220px;
     }
     
     #frioul .img_activite {
-        height: 140px;
+        height: 160px;
     }
     
     #nddlg {
-        height: 200px;
+        height: 220px;
     }
     
     #nddlg .img_activite {
-        height: 140px;
+        height: 160px;
     }
     
     #longchamp {
-        height: 200px;
+        height: 220px;
     }
     
     #longchamp .img_activite {
-        height: 140px;
+        height: 160px;
     }
 
     footer {
@@ -662,6 +662,32 @@ footer {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .hebergement {
+        width: calc(50% - 20px);
+    }
 
+    .activite_column {
+        width: 50%;
+    }
+
+    #titre_section_activites {
+        order: 1;
+    }
+
+    #activite_column_1 {
+        order: 2;
+    }
+
+    #activite_column_2 {
+        order: 4;
+    }
+
+    #activite_column_3 {
+        order: 3;
+    }
+
+    #activite_column_4 {
+        order: 5;
+    }
 }
